@@ -345,6 +345,51 @@
       .btn-outline:active {
         transform: translateY(0) scale(0.97);
       }
+      .btn-lattes {
+        /* Alinhamento e Espaçamento */
+        display: inline-flex;
+        padding: 8px 16px;
+
+        /* Cores e Legibilidade (Correção Principal) */
+        background-color: transparent; /* Fundo invisível no estado normal */
+        color: rgba(
+          255,
+          255,
+          255,
+          0.85
+        ); /* Texto branco sutil para legibilidade perfeita */
+
+        /* Design: Bordas Suaves */
+        border: 1px solid rgba(255, 255, 255, 0.2); /* Borda fina e transparente, igual ao 'Voltar' */
+        border-radius: 4px; /* Cantos levemente arredondados */
+
+        /* Tipografia: Integrada ao site */
+        text-decoration: none; /* Remove o sublinhado */
+        font-family: sans-serif;
+        font-weight: 700;
+        font-size: 0.75rem; /* Fonte menor e elegante */
+        text-transform: uppercase; /* Caixa alta para combinar com os rótulos */
+        letter-spacing: 0.5px;
+
+        /* Transição Suave */
+        transition: all 0.3s ease-in-out; /* Controla o tempo de animação do hover */
+      }
+
+      /* --- Efeito ao passar o Mouse (Hover) --- */
+      .btn-lattes:hover {
+        background-color: rgba(
+          255,
+          255,
+          255,
+          0.1
+        ); /* Dá um brilho sutil ao fundo */
+        border-color: #ffffff; /* A borda acende (fica branca pura) */
+        color: #ffffff; /* O texto fica branco puro para máximo destaque */
+        transform: translateY(
+          -1px
+        ); /* Pequeno movimento para cima (opcional, dá leveza) */
+      }
+
       .hero-right {
         background: rgba(255, 255, 255, 0.06);
         backdrop-filter: blur(8px);
@@ -980,7 +1025,28 @@
         align-items: center;
         gap: 4px;
       }
-
+      .badge-blue {
+        background-color: #003366; /* Azul escuro */
+        color: #ffffff; /* Texto branco para contraste */
+        padding: 3px 8px;
+        border-radius: 4px;
+        font-weight: 700;
+        font-size: 0.78rem;
+        display: inline-flex;
+        align-items: center;
+        gap: 4px;
+      }
+      .badge-purple {
+        background-color: #6f42c1; /* Roxo vibrante e profissional */
+        color: #ffffff;
+        padding: 3px 8px;
+        border-radius: 4px;
+        font-weight: 700;
+        font-size: 0.78rem;
+        display: inline-flex;
+        align-items: center;
+        gap: 4px;
+      }
       /* ─── LINKS ─── */
       .links-grid {
         display: grid;
@@ -1811,7 +1877,7 @@
                     <strong>SIGAA</strong>
                     <span
                       >Slides e materiais de aula, gerenciamento de atividades e
-                      feedback</span
+                      feedback.</span
                     >
                   </div>
                 </a>
@@ -1880,7 +1946,7 @@
                     <strong>Notion</strong>
                     <span
                       >Organização de conteúdos e materiais de apoio à aula e
-                      atividades</span
+                      atividades.</span
                     >
                   </div>
                 </a>
@@ -1918,7 +1984,7 @@
                     <strong>WhatsApp</strong>
                     <span
                       >Ferramenta de comunicação e remoção de dúvidas dos
-                      estudantes</span
+                      estudantes.</span
                     >
                   </div>
                 </a>
@@ -2143,8 +2209,9 @@
         </div>
         <h2 class="sec-title reveal">Avaliação</h2>
         <p class="sec-desc reveal" style="max-width: 100%">
-          A nota final da disciplina (NF) é a média aritmética simples das notas
-          das quatro unidades, seguindo os pesos das avaliações abaixo.
+          A <strong>nota final da disciplina (NF)</strong> é a
+          <strong>média aritmética simples</strong> das notas das quatro
+          unidades, seguindo os pesos das avaliações abaixo.
         </p>
         <div class="eval-grid">
           <div class="eval-card reveal reveal-delay-1">
@@ -2291,14 +2358,14 @@
                   <p class="act-desc">
                     <strong>Sala de Aula Invertida:</strong> Ler material para
                     compreender RNF e aplicar exemplos práticos
-                    <em>(compreender e aplicar)</em>
+                    <em>(compreender e aplicar).</em>
                   </p>
                 </div>
                 <div class="act-item">
                   <span class="act-strategy-tag">AT</span>
                   <p class="act-desc">
                     <strong>Aula Teórica:</strong> Exposição de conceitos
-                    <em>(compreender)</em>
+                    <em>(compreender).</em>
                   </p>
                 </div>
                 <div class="act-item">
@@ -2307,7 +2374,7 @@
                     <strong>Aula Expositiva Dialogada:</strong> Analisar
                     criticamente seu projeto de Análise e Projeto de Sistemas
                     (A&P) e aplicar checklist quantificável
-                    <em>(aplicar e analisar)</em>
+                    <em>(aplicar e analisar).</em>
                   </p>
                 </div>
               </div>
@@ -2324,7 +2391,7 @@
                   <span class="act-strategy-tag">AT</span>
                   <p class="act-desc">
                     <strong>Aula Teórica:</strong> Exposição de conceitos
-                    <em>(compreender)</em>
+                    <em>(compreender).</em>
                   </p>
                 </div>
                 <div class="act-item">
@@ -2332,7 +2399,7 @@
                   <p class="act-desc">
                     <strong>Aula Expositiva Dialogada:</strong> Analisar
                     exemplos reais e discutir com o profissional
-                    <em>(compreender)</em>
+                    <em>(compreender).</em>
                   </p>
                 </div>
                 <div class="act-item">
@@ -2340,7 +2407,7 @@
                   <p class="act-desc">
                     <strong>Aprendizagem Baseada em Projetos:</strong> Aplicar
                     no projeto — personas e mapas da jornada do usuário
-                    <em>(aplicar e analisar)</em>
+                    <em>(aplicar e analisar).</em>
                   </p>
                 </div>
               </div>
@@ -2357,21 +2424,21 @@
                   <span class="act-strategy-tag">AED</span>
                   <p class="act-desc">
                     <strong>Aula Expositiva Dialogada:</strong> Integração entre
-                    RNFs e UX <em>(compreender)</em>
+                    RNFs e UX <em>(compreender).</em>
                   </p>
                 </div>
                 <div class="act-item">
                   <span class="act-strategy-tag">AP</span>
                   <p class="act-desc">
                     <strong>Aula Prática:</strong> Reescrita de mensagens da
-                    interface do usuário <em>(aplicar)</em>
+                    interface do usuário <em>(aplicar).</em>
                   </p>
                 </div>
                 <div class="act-item">
                   <span class="act-strategy-tag">ABP</span>
                   <p class="act-desc">
                     <strong>Aprendizagem Baseada em Projetos:</strong> Criar
-                    protótipos de alta fidelidade <em>(aplicar e analisar)</em>
+                    protótipos de alta fidelidade <em>(aplicar e analisar).</em>
                   </p>
                 </div>
               </div>
@@ -2388,21 +2455,21 @@
                   <span class="act-strategy-tag">AED</span>
                   <p class="act-desc">
                     <strong>Aula Expositiva Dialogada:</strong> Fundamentação de
-                    métodos de avaliação de usabilidade <em>(compreender)</em>
+                    métodos de avaliação de usabilidade <em>(compreender).</em>
                   </p>
                 </div>
                 <div class="act-item">
                   <span class="act-strategy-tag">AP</span>
                   <p class="act-desc">
                     <strong>Aula Prática:</strong> Refinar protótipos de alta
-                    fidelidade <em>(aplicar e analisar)</em>
+                    fidelidade <em>(aplicar e analisar).</em>
                   </p>
                 </div>
                 <div class="act-item">
                   <span class="act-strategy-tag">ABP</span>
                   <p class="act-desc">
                     <strong>Aprendizagem Baseada em Projetos:</strong> Avaliar
-                    protótipos <em>(avaliar)</em>
+                    protótipos <em>(avaliar).</em>
                   </p>
                 </div>
               </div>
@@ -2502,7 +2569,7 @@
               <p class="sch-date">26/05</p>
               <p class="sch-topic">
                 <strong>Unidade IV:</strong>
-                <span class="badge-green"
+                <span class="badge-blue"
                   >Seminário Integrador — 4º Entregável</span
                 >
               </p>
@@ -2513,7 +2580,10 @@
             <div class="sch-content">
               <p class="sch-date">27/05</p>
               <p class="sch-topic">
-                <strong>Entrega Final — Versão Final dos Artefatos</strong>
+                <span class="badge-green"
+                  >Entrega Final — Versão Final dos Artefatos</span
+                >
+                <span class="badge-purple">Avaliação da disciplina</span>
               </p>
             </div>
           </div>
@@ -2556,7 +2626,7 @@
               <strong>Material Complementar</strong
               ><span
                 >Acesse os arquivos e materiais de apoio no Google Drive da
-                turma</span
+                turma.</span
               >
             </div>
             <div class="link-arrow">
@@ -2599,7 +2669,7 @@
               <strong>Acompanhamento do Desempenho</strong
               ><span
                 >Consulte em tempo real a planilha de gamificação da
-                disciplina</span
+                disciplina.</span
               >
             </div>
             <div class="link-arrow">
@@ -2856,7 +2926,13 @@
           <h1 class="prof-page-name">
             <span>Professor</span>Josué Viana Ferreira
           </h1>
-          <p class="prof-page-email">josue.ferreira@icen.ufpa.br</p>
+          <a
+            href="http://lattes.cnpq.br/2263906874192876"
+            target="_blank"
+            class="btn-lattes"
+          >
+            Currículo Lattes
+          </a>
         </div>
       </div>
       <div class="prof-page-body">
@@ -2912,18 +2988,18 @@
               </h4>
               <p>
                 <strong>(2023)</strong> Doutorado em andamento em Ciência da
-                Computação (Universidade Federal do Pará, UFPA, Brasil).<br />
+                Computação (Universidade Federal do Pará, UFPA, Brasil)<br />
                 <strong>(2021 - 2022)</strong> Mestrado em Programa de
                 Pós-Graduação em Computação Aplicada (Universidade Federal do
-                Pará - Campus Tucuruí, UFPA, Brasil).<br />
+                Pará - Campus Tucuruí, UFPA, Brasil)<br />
                 <strong>(2019 - 2021)</strong> Especialização em Informática
                 Educativa (Instituto Federal de Educação, Ciência e Tecnologia
-                do Pará - Campus Cametá, IFPA, Brasil).<br />
+                do Pará - Campus Cametá, IFPA, Brasil)<br />
                 <strong>(2016 - 2020)</strong> Graduação em Sistemas de
                 Informação (Universidade Federal do Pará - Campus Cametá, UFPA,
-                Brasil).<br />
+                Brasil)<br />
                 <strong>(2014 - 2017)</strong> Graduação em Educação Física
-                (Centro Universitário Leonardo da Vinci, UNIASSELVI, Brasil).
+                (Centro Universitário Leonardo da Vinci, UNIASSELVI, Brasil)
               </p>
             </div>
             <div class="placeholder-box">
@@ -2941,10 +3017,10 @@
                 >Linhas de Pesquisa
               </h4>
               <p>
-                Engenharia de Software.<br />
-                Interação Humano-Computador.<br />
-                Ensino-Aprendizagem.<br />
-                Inteligência Artificial Aplicada.
+                Engenharia de Software<br />
+                Interação Humano-Computador<br />
+                Ensino-Aprendizagem<br />
+                Inteligência Artificial Aplicada
               </p>
             </div>
             <div class="placeholder-box">
@@ -3061,7 +3137,13 @@
           <h1 class="prof-page-name">
             <span>Professor</span>Sandro Ronaldo Bezerra Oliveira
           </h1>
-          <p class="prof-page-email">srbo@ufpa.br</p>
+          <a
+            href="http://lattes.cnpq.br/2080791630485427"
+            target="_blank"
+            class="btn-lattes"
+          >
+            Currículo Lattes
+          </a>
         </div>
       </div>
       <div class="prof-page-body">
@@ -3127,18 +3209,15 @@
               </h4>
               <p>
                 <strong>(2015 - 2016)</strong> Pós-Doutorado (Universidade
-                Federal de Pernambuco, UFPE, Brasil).<br />
+                Federal de Pernambuco, UFPE, Brasil)<br />
                 <strong>(2004 - 2007)</strong> Doutorado em Ciências da
-                Computação (Universidade Federal de Pernambuco, UFPE,
-                Brasil).<br />
+                Computação (Universidade Federal de Pernambuco, UFPE, Brasil)<br />
                 <strong>(2000 - 2001)</strong> Mestrado em Ciências da
-                Computação (Universidade Federal de Pernambuco, UFPE,
-                Brasil).<br />
+                Computação (Universidade Federal de Pernambuco, UFPE, Brasil)<br />
                 <strong>(1999 - 2000)</strong> Especialização em Análise de
-                Sistemas (Universidade Federal do Pará, UFPA, Brasil).<br />
+                Sistemas (Universidade Federal do Pará, UFPA, Brasil)<br />
                 <strong>(1996 - 1998)</strong> Graduação em Tecnologia em
-                Processamento de Dados (Universidade da Amazônia, UNAMA,
-                Brasil).
+                Processamento de Dados (Universidade da Amazônia, UNAMA, Brasil)
               </p>
             </div>
             <div class="placeholder-box">
@@ -3278,7 +3357,13 @@
           <h1 class="prof-page-name">
             <span>Professor</span>Carlos dos Santos Portela
           </h1>
-          <p class="prof-page-email">csp@ufpa.br</p>
+          <a
+            href=" http://lattes.cnpq.br/7707594869367480"
+            target="_blank"
+            class="btn-lattes"
+          >
+            Currículo Lattes
+          </a>
         </div>
       </div>
       <div class="prof-page-body">
@@ -3340,18 +3425,17 @@
               </h4>
               <p>
                 <strong>(2024 - 2025)</strong> Pós-Doutorado (Universidade
-                Federal de Alagoas, UFAL, Brasil).<br />
+                Federal de Alagoas, UFAL, Brasil)<br />
                 <strong>(2013 - 2017)</strong> Doutorado em Ciências da
-                Computação (Universidade Federal de Pernambuco, UFPE,
-                Brasil).<br />
+                Computação (Universidade Federal de Pernambuco, UFPE, Brasil)<br />
                 <strong>(2010 - 2012)</strong> Mestrado em Programa de
                 Pós-Graduação em Ciência da Computação (Universidade Federal de
-                Pernambuco, UFPE, Brasil).<br />
+                Pernambuco, UFPE, Brasil)<br />
                 <strong>(2006 - 2009)</strong> Graduação em Sistemas de
-                Informação (Universidade Federal do Pará, UFPA, Brasil).<br />
+                Informação (Universidade Federal do Pará, UFPA, Brasil)<br />
                 <strong>(2003 - 2005)</strong> Curso técnico/profissionalizante
                 (Instituto Federal de Educação, Ciência e Tecnologia do Pará,
-                IFPA, Brasil).
+                IFPA, Brasil)
               </p>
             </div>
             <div class="placeholder-box">
@@ -3369,10 +3453,10 @@
                 >Linhas de Pesquisa
               </h4>
               <p>
-                Engenharia de Software.<br />
-                Ensino-Aprendizagem.<br />
-                Interação Humano-Computador.<br />
-                Inteligência Artificial Aplicada.
+                Engenharia de Software<br />
+                Ensino-Aprendizagem<br />
+                Interação Humano-Computador<br />
+                Inteligência Artificial Aplicada
               </p>
             </div>
             <div class="placeholder-box">
