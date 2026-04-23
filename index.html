@@ -1249,7 +1249,7 @@
         font-size: 0.95rem;
         color: var(--mid);
         line-height: 1.9;
-        max-width: 680px;
+        max-width: 100%;
       }
       .placeholder-grid {
         display: grid;
@@ -1726,7 +1726,7 @@
           ><span class="sec-tag">A Disciplina</span>
         </div>
         <h2 class="sec-title reveal">Sobre a Disciplina</h2>
-        <p class="sec-desc reveal">
+        <p class="sec-desc reveal" style="max-width: 100%">
           Apresentar conteúdos, habilidades e competências para a aplicação
           integrada de Requisitos Não Funcionais (RNFs) e Experiência do Usuário
           (UX) ao longo do ciclo de desenvolvimento de sistemas.
@@ -1810,15 +1810,52 @@
                     stroke-linecap="round"
                     stroke-linejoin="round"
                   >
-                    <path d="M12 2L2 19h20L12 2z" stroke="#4285F4" />
-                    <path d="M2 19l5-8.5" stroke="#34A853" />
-                    <path d="M22 19l-5-8.5" stroke="#FBBC05" />
-                    <path d="M7 19h10" stroke="#EA4335" />
+                    <!-- Página/documento com canto dobrado -->
+                    <path
+                      d="M4 2h11l5 5v15a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V3a1 1 0 0 1 1-1z"
+                      fill="#ffffff"
+                      stroke="#000000"
+                      stroke-width="1.5"
+                    />
+                    <!-- Canto dobrado -->
+                    <polyline
+                      points="15 2 15 7 20 7"
+                      stroke="#000000"
+                      stroke-width="1.5"
+                    />
+                    <!-- Linhas de texto dentro da página -->
+                    <line
+                      x1="7"
+                      y1="11"
+                      x2="17"
+                      y2="11"
+                      stroke="#000000"
+                      stroke-width="1.5"
+                    />
+                    <line
+                      x1="7"
+                      y1="14"
+                      x2="17"
+                      y2="14"
+                      stroke="#000000"
+                      stroke-width="1.5"
+                    />
+                    <line
+                      x1="7"
+                      y1="17"
+                      x2="13"
+                      y2="17"
+                      stroke="#000000"
+                      stroke-width="1.5"
+                    />
                   </svg>
                 </div>
                 <div class="tech-item-text">
-                  <strong>Google Drive</strong
-                  ><span>Repositório de material complementar</span>
+                  <strong>Notion</strong
+                  ><span
+                    >Organização de contéudos e materiais de apoio à aula e
+                    atividades</span
+                  >
                 </div>
               </li>
               <li class="tech-item" data-tooltip="Comunicação rápida">
@@ -1855,7 +1892,7 @@
           <span class="sec-num">02</span><span class="sec-tag">Programa</span>
         </div>
         <h2 class="sec-title reveal">Unidades</h2>
-        <p class="sec-desc reveal">
+        <p class="sec-desc reveal" style="max-width: 100%">
           A disciplina está organizada em quatro unidades progressivas, cobrindo
           desde os fundamentos até a avaliação prática de artefatos de software.
         </p>
@@ -1915,7 +1952,7 @@
           ><span class="sec-tag">Metodologia</span>
         </div>
         <h2 class="sec-title reveal">Estratégias Utilizadas</h2>
-        <p class="sec-desc reveal">
+        <p class="sec-desc reveal" style="max-width: 100%">
           Diferentes abordagens pedagógicas combinadas para maximizar o
           aprendizado teórico e prático.
         </p>
@@ -2063,7 +2100,7 @@
           <span class="sec-num">04</span><span class="sec-tag">Notas</span>
         </div>
         <h2 class="sec-title reveal">Avaliação</h2>
-        <p class="sec-desc reveal">
+        <p class="sec-desc reveal" style="max-width: 100%">
           A nota final da disciplina (NF) é a média aritmética simples das notas
           das quatro unidades, seguindo os pesos das avaliações abaixo.
         </p>
@@ -2338,7 +2375,7 @@
           <span class="sec-num">05</span><span class="sec-tag">Calendário</span>
         </div>
         <h2 class="sec-title reveal">Cronograma</h2>
-        <p class="sec-desc reveal">
+        <p class="sec-desc reveal" style="max-width: 100%">
           Datas e tópicos previstos para o semestre.
         </p>
         <div class="schedule-list reveal">
@@ -2447,7 +2484,9 @@
           <span class="sec-num">06</span><span class="sec-tag">Recursos</span>
         </div>
         <h2 class="sec-title reveal">Links Úteis</h2>
-        <p class="sec-desc reveal">Recursos de apoio à disciplina.</p>
+        <p class="sec-desc reveal" style="max-width: 100%">
+          Recursos de apoio à disciplina.
+        </p>
         <div class="links-grid">
           <a
             class="link-card reveal reveal-delay-1"
@@ -2544,7 +2583,7 @@
           <span class="sec-num">07</span><span class="sec-tag">Equipe</span>
         </div>
         <h2 class="sec-title reveal">Pesquisadores</h2>
-        <p class="sec-desc reveal">
+        <p class="sec-desc reveal" tyle="max-width: 100%">
           Conheça os docentes responsáveis pela disciplina e acesse seus
           currículos.
         </p>
@@ -3107,9 +3146,40 @@
         <div class="prof-section">
           <h3 class="prof-section-title">Biografia</h3>
           <p class="prof-bio">
-            [Insira aqui a biografia do Prof. Carlos dos Santos Portela —
-            formação acadêmica, trajetória profissional, áreas de atuação e
-            interesses de pesquisa.]
+            Doutor em Ciência da Computação pelo Centro de Informática (CIn) da
+            Universidade Federal de Pernambuco (UFPE) (2017), obteve o título de
+            Mestre em Ciência da Computação pela UFPE (2012) e o título de
+            Bacharel em Sistemas de Informação pela Universidade Federal do Pará
+            (UFPA) (2009). Possui experiência acadêmica na área de Engenharia de
+            Software, atuando nas seguintes pesquisas: Gerência de Projetos
+            (SCRUM), Modelagem de Processos (SPEM e BPMN), Modelos de Qualidade
+            do Processo de Software (MPS.BR e CMMI-DEV), Execução de Processos
+            de Software e Ensino-Aprendizagem de Engenharia de Software.
+            Adicionalmente, realizou diversas pesquisas na área de Interação
+            Humano-Computador, contemplando a Avaliação de Interfaces,
+            Usabilidade e Experiência do Usuário (UX). Recentemente, desenvolve
+            pesquisas na área de Inteligência Artificial Aplicada na Educação
+            Pública. Possui também experiência profissional, tendo atuado como
+            Analista de Testes na COBRA Tecnologia (2009 e 2012), como Gerente
+            de Projetos na RNP e NEES (2012 e 2022) e como Consultor em Melhoria
+            de Processo de Software (2013 e 2023). Atuou como Professor Adjunto
+            na Faculdade Paraense de Ensino (FAPEN) (2012-2013), na Faculdade
+            Joaquim Nabuco (FJN) (2013) e no Centro Universitário do Estado do
+            Pará (CESUPA) (2014-2016). Atualmente é professor no Campus
+            Universitário do Tocantins/Cametá da UFPA, ministrando aulas no
+            curso de Bacharelado em Sistemas de Informação (BSI). Em 2019
+            assumiu a direção da Faculdade de Sistemas de Informação (FASI). Em
+            2020 foi credenciado no corpo docente do Programa de Pós-Graduação
+            em Computação Aplicada (PPCA) da UFPA Campus Tucuruí. Coordena o
+            Laboratório de Abordagens de ensino Focadas no Aluno (LA FocA) desde
+            2017 na UFPA Campus Cametá. Também possui parcerias de pesquisas com
+            os grupos: Software Process Improvement - Development and Research
+            (SPIDER) e Laboratório de Programação Extrema (LABEX) da UFPA;
+            Laboratório de Tecnologias Computacionais (LabTeC) da Universidade
+            Federal Rural da Amazônia (UFRA); Software Process and Education Lab
+            (SPELL) da Universidade Federal de Lavras (UFLA); e Núcleo de
+            Excelência em Tecnologias Sociais (NEES) da Universidade Federal de
+            Alagoas (UFAL).
           </p>
         </div>
         <div class="prof-section">
@@ -3129,7 +3199,18 @@
                   <path d="M6 12v5c0 1.1 2.7 2 6 2s6-.9 6-2v-5" /></svg
                 >Formação Acadêmica
               </h4>
-              <p>[Graduação, Mestrado, Doutorado e Pós-Doutorado]</p>
+              <p>
+                <strong> (2013 - 2017) </strong> Doutorado em Ciências da
+                Computação. Universidade Federal de Pernambuco, UFPE, Brasil.
+                <strong> (2010 - 2012) </strong> Mestrado em Programa de
+                Pós-Graduação em Ciência da Computação. Universidade Federal de
+                Pernambuco, UFPE, Brasil.
+                <strong> (2006 - 2009) </strong> Graduação em Sistemas de
+                Informação. Universidade Federal do Pará, UFPA, Brasil.
+                <strong> (2003 - 2005) </strong> Curso
+                técnico/profissionalizante. Instituto Federal de Educação,
+                Ciência e Tecnologia do Pará, IFPA, Brasil.
+              </p>
             </div>
             <div class="placeholder-box">
               <h4>
@@ -3145,7 +3226,10 @@
                   <line x1="21" y1="21" x2="16.65" y2="16.65" /></svg
                 >Linhas de Pesquisa
               </h4>
-              <p>[Principais linhas e grupos de pesquisa]</p>
+              <p>
+                Engenharia de Software Ensino-Aprendizagem Interação
+                Humano-Computador Inteligência Artificial Aplicada
+              </p>
             </div>
             <div class="placeholder-box">
               <h4>
